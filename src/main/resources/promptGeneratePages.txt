@@ -1,0 +1,11 @@
+This is an automation framework selenium-java-maven.
+I want to create the page object in java for this framework.
+Extract the selectors (using By class - the order of the selectors should be: first Id, then classname, xpath, css - best practices must be applied here) 
+for all interactive elements (buttons, inputs, links, etc.) from the provided HTML. 
+It must be created in a new java class. The name of the class must be the name of the page + Page like WelcomePage or HomePage (title of the page + 'Page').
+Please also create the methods to interact with those elements. This class must be inherited by a base class (the name of the base class is: 'BaseTest') 
+that contains the driver instance and some basic methods to interact with the elements (I have defined those methods to interact with the elements: 
+click, clearAndEnterText, selectCheckbox, isElementPresent, isElementDisplayed on basetest.java class), please use those methods.
+Also, add to the class this import 'import com.se.seleniumJavaAccelerator.BaseTest;' which is the import for the base class and also add all the java imports needed to run the code.
+Also, add in the first line of the class this line 'package com.se.seleniumJavaAccelerator.pages;'. Please don't add a constructor to the class. The only text generated must be the java code and should not include comments or the line '```java'.
+This is the HTML:
